@@ -1,7 +1,7 @@
-import jsonfile from "jsonfile";
-import moment from "moment";
-import simpleGit from "simple-git";
-import random from "random";
+const jsonfile = require("jsonfile");
+const moment = require("moment");
+const simpleGit = require("simple-git");
+const random = require("random");
 
 const path = "./data.json";
 function getRndInteger(min, max) {
