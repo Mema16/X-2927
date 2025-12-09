@@ -16,8 +16,9 @@ const makeCommits = (n) => {
   counter++;
   console.log(`Commit #${counter}`);
   
-  const x = random.int(0, 54);
-  const y = random.int(0, 5);
+  const x = Math.floor(Math.random() * (54 + 1)); // Generates a random integer between 0 and 54
+  const y = Math.floor(Math.random() * (5 + 1));  // Generates a random integer between 0 and 5
+
   const date = moment()
     .subtract(getRndInteger(0,10), "y")
     .add(1, "d")
